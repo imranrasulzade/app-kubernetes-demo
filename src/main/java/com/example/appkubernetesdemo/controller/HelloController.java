@@ -26,4 +26,10 @@ public class HelloController {
     public String sayHello3() {
         return "Hiiiia!";
     }
+
+
+    @GetMapping("/ss")
+    public String sayHello4() {
+        return "ssss!";
+    }
 }
