@@ -28,7 +28,7 @@ public class HelloController {
     }
 
 
-    @GetMapping("/ss")
+    @GetMapping("/sss")
     public String sayHello4() {
         return "ssss!";
     }
