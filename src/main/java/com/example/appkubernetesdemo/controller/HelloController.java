@@ -2,6 +2,7 @@ package com.example.appkubernetesdemo.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,12 +25,18 @@ public class HelloController {
 
     @GetMapping("/hii")
     public String sayHello3() {
-        return "Hiiiia!";
+        return "Hiiiiiiiiiiiiiiiiiiiiiiiiii!";
     }
 
 
     @GetMapping("/sss")
     public String sayHello4() {
         return "ssss!";
+    }
+
+
+    @PostMapping("/for-cron")
+    public void printHello() {
+        System.out.println("Hello World!");
     }
 }
