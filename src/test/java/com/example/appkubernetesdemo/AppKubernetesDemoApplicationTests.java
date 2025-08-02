@@ -8,7 +8,10 @@ import org.springframework.test.context.TestPropertySource;
 @TestPropertySource(properties = {
         "spring.datasource.url=jdbc:h2:mem:testdb",
         "spring.datasource.driver-class-name=org.h2.Driver",
-        "spring.jpa.hibernate.ddl-auto=none"
+        "spring.jpa.hibernate.ddl-auto=none",
+        "spring.rabbitmq.host=localhost",
+        "spring.rabbitmq.port=5672",
+        "spring.rabbitmq.listener.simple.auto-startup=false"
 })
 class AppKubernetesDemoApplicationTests {
 
