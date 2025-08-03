@@ -39,4 +39,9 @@ public class HelloController {
     public void printHello() {
         System.out.println("Hello World!");
     }
+
+    @GetMapping("/hello-v2")
+    public String hello() {
+        return "Hello from Kubernetes!";
+    }
 }
